@@ -5,8 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/247f8df8c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <div class="loader">
+
+    </div>
+
+    <header>
+        <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo du site Ohmyfood">
+    </header>
+
+    <section id="location-info">
+        <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
+    </section>
+
+    <section id="hero-cta">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+        <a href="#" class="btn">Explorer nos restaurants</a>
+    </section>
+
+    <section id="how-it-works">
+        <h2>Fonctionnement</h2>
+        <div class="steps-container">
+            <div class="step">
+                <span class="badge-number">1</span>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="step">
+                <span class="badge-number">2</span>
+                <i class="fa-solid fa-list"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="step">
+                <span class="badge-number">3</span>
+                <i class="fa-solid fa-shop"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurants-list">
+        <h2>Restaurants</h2>
+        <div class="card-container">
+            <article class="card">
+                <a href="./restaurants/palette-du-gout.html">
+                    <div class="card-img">
+                        <img src="./assets/images/restaurants/palette-du-gout.jpg" alt="Table à manger avec une assiette dans un restaurant">
+                        <span class="card-status">Nouveau</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">La palette du goût</h3>
+                        <p class="card-subtitle">Ménilmontant</p>
+                    </div>    
+                </a>
+            </article>
+            <article class="card">
+                <a href="./restaurants/note-enchantee.html">
+                    <div class="card-img">
+                        <img src="./assets/images/restaurants/note-enchantee.jpg" alt="Table à manger avec une assiette dans un restaurant">
+                        <span class="card-status">Nouveau</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">La note enchantée</h3>
+                        <p class="card-subtitle">Charonne</p>
+                    </div>    
+                </a>
+            </article>
+            <article class="card">
+                <a href="./restaurants/a-la-francaise.html">
+                    <div class="card-img">
+                        <img src="./assets/images/restaurants/a-la-francaise.jpg" alt="Table à manger avec une assiette dans un restaurant">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">À la française</h3>
+                        <p class="card-subtitle">Cité Rouge</p>
+                    </div>    
+                </a>
+            </article>
+            <article class="card">
+                <a href="./restaurants/delice-des-sens.html">
+                    <div class="card-img">
+                        <img src="./assets/images/restaurants/delice-des-sens.jpg" alt="Table à manger avec une assiette dans un restaurant">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Le délice des sens</h3>
+                        <p class="card-subtitle">Folie-Méricourt</p>
+                    </div>    
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./assets/images/logo/ohmyfood.png" alt="Logo du site Ohmyfood">
+        <nav>
+            <ul>
+                <li><a href="#">Proposer un restaurant</a></li>
+                <li><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
