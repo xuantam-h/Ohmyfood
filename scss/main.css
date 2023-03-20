@@ -1,0 +1,122 @@
+/* Color variables */
+/* Other variables */
+/* Function to convert into Rem units */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.625rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  color: #FFF;
+  border-radius: 25px;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  text-decoration: none;
+  padding: 0.8125rem 1.125rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+#location-info {
+  background-color: #EAEAEA;
+  padding: 1rem 0;
+  text-align: center;
+  color: #353535;
+}
+#location-info p {
+  font-weight: 500;
+}
+#location-info p i {
+  margin-right: 1.0625rem;
+}
+
+#hero-cta {
+  text-align: center;
+  padding: 2.4375rem 0 3.5625rem 0;
+  background-color: #F6F6F6;
+}
+#hero-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 1.6875rem;
+  margin-top: 1rem;
+  color: #353535;
+}
+
+#how-it-works {
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+}
+#how-it-works .steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+#how-it-works .steps-container .step {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 1.25rem;
+  padding: 1.75rem 0 1.75rem 2.125rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: 150ms background-color ease-in-out;
+}
+#how-it-works .steps-container .step:hover {
+  background-color: #F5EDFF;
+}
+#how-it-works .steps-container .step:hover i {
+  color: #9356DC;
+}
+#how-it-works .steps-container .step .badge-number {
+  background-color: #9356DC;
+  color: #FFF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.3125rem;
+}
+#how-it-works .steps-container .step p {
+  font-weight: 500;
+}
+#how-it-works .steps-container .step i {
+  margin-right: 1.4375rem;
+  transition: 150ms color ease-in-out;
+}
+
+#restaurants-list {
+  background-color: #F6F6F6;
+  padding: 3.375rem 1.25rem 4rem 1.25rem;
+}/*# sourceMappingURL=main.css.map */

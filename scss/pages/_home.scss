@@ -1,0 +1,81 @@
+#location-info{
+    background-color: $light-gray-color;
+    padding:1rem 0;
+    text-align: center;
+    color: $gray-color;
+    p{
+        font-weight: $medium-weight;
+        i{
+            margin-right: toRem(17);
+        }
+    }
+}
+
+#hero-cta{
+    text-align: center;
+    padding:toRem(39) 0 toRem(57) 0;
+    background-color: $lightest-gray-color;
+    p{
+        font-size: toRem(18);
+        margin-bottom: toRem(27);
+        margin-top: toRem(16);
+        color:$gray-color;
+    }
+}
+
+#how-it-works{
+    padding:toRem(48) toRem(20) toRem(68) toRem(20);
+
+    .steps-container{
+        display: flex;
+        flex-direction: column;
+        gap: toRem(25);
+
+        .step{
+            display: flex;
+            position:relative;
+            align-items: center;
+            background-color:$lightest-gray-color;
+            border-radius: toRem(20);
+            padding:toRem(28) 0 toRem(28) toRem(34);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            transition:150ms background-color ease-in-out;
+
+            &:hover{
+                background-color:#F5EDFF;
+                i{
+                    color:$primary-color;
+                }
+            }
+
+            .badge-number{
+                background-color: $primary-color;
+                color:$white-color;
+                font-size: toRem(14);
+                font-weight: $medium-weight;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width:toRem(24);
+                height:toRem(24);
+                border-radius: 50%;
+                position: absolute;
+                left:toRem(-5);
+            }
+
+            p{
+                font-weight: $medium-weight;
+            }
+
+            i{
+                margin-right:toRem(23);
+                transition:150ms color ease-in-out;
+            }
+        }
+    }
+}
+
+#restaurants-list{
+    background-color: $lightest-gray-color;
+    padding:toRem(54) toRem(20) toRem(64) toRem(20);
+}
