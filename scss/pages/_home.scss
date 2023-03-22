@@ -37,7 +37,7 @@
             align-items: center;
             background-color:$lightest-gray-color;
             border-radius: toRem(20);
-            padding:toRem(28) 0 toRem(28) toRem(34);
+            padding:toRem(28) toRem(28) toRem(28) toRem(34);
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             transition:150ms background-color ease-in-out;
 
@@ -78,4 +78,10 @@
 #restaurants-list{
     background-color: $lightest-gray-color;
     padding:toRem(54) toRem(20) toRem(64) toRem(20);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap:toRem(18);
 }
