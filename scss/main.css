@@ -166,6 +166,7 @@ footer nav ul li a i {
   background-color: #F6F6F6;
   border-radius: 1.25rem;
   padding: 1.75rem 1.75rem 1.75rem 2.125rem;
+  margin-left: 0.8125rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   transition: 150ms background-color ease-in-out;
 }
@@ -187,7 +188,7 @@ footer nav ul li a i {
   height: 1.5rem;
   border-radius: 50%;
   position: absolute;
-  left: -0.3125rem;
+  left: -0.75rem;
 }
 #how-it-works .steps-container .step p {
   font-weight: 500;
@@ -195,6 +196,7 @@ footer nav ul li a i {
 #how-it-works .steps-container .step i {
   margin-right: 1.4375rem;
   transition: 150ms color ease-in-out;
+  color: #7E7E7E;
 }
 
 #restaurants-list {

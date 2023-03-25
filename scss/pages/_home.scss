@@ -38,6 +38,7 @@
             background-color:$lightest-gray-color;
             border-radius: toRem(20);
             padding:toRem(28) toRem(28) toRem(28) toRem(34);
+            margin-left: toRem(13);
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             transition:150ms background-color ease-in-out;
 
@@ -60,7 +61,7 @@
                 height:toRem(24);
                 border-radius: 50%;
                 position: absolute;
-                left:toRem(-5);
+                left:toRem(-12);
             }
 
             p{
@@ -70,6 +71,7 @@
             i{
                 margin-right:toRem(23);
                 transition:150ms color ease-in-out;
+                color: $icons-color;
             }
         }
     }
