@@ -99,9 +99,9 @@
     top:0;
     left:0;
     z-index: 1;
-    background:rgba(0,0,0,0.9);
+    background:$white-color;
     opacity:1;
-    animation:fadeOut 2000ms;
+    animation:fadeOut 4000ms forwards;
 
     .loader{
         position: relative;

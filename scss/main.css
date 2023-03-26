@@ -101,8 +101,13 @@ p {
   0% {
     opacity: 1;
   }
+  80% {
+    opacity: 1;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 header {
@@ -136,6 +141,8 @@ footer nav ul li a {
 }
 footer nav ul li a i {
   margin-right: 0.6875rem;
+  width: 0.8125rem;
+  font-size: 0.8125rem;
 }
 footer img {
   max-width: 6.875rem;
@@ -236,9 +243,9 @@ footer img {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.9);
+  background: #FFF;
   opacity: 1;
-  animation: fadeOut 2000ms;
+  animation: fadeOut 4000ms forwards;
 }
 .loader-container .loader {
   position: relative;
