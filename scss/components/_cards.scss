@@ -6,11 +6,6 @@
     a{
         text-decoration: none;
         color:$black-color;
-        transition:150ms opacity ease-in-out;
-
-        &:hover{
-            opacity: .7;
-        }
     }
 
     .card-img{

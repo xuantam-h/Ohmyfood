@@ -37,7 +37,20 @@ p {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-.btn-like:hover i {
+.btn-like {
+  background: none;
+  border: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+}
+.btn-like i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 250ms background ease-in-out;
+}
+.btn-like:hover i.fa-solid {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -52,10 +65,6 @@ p {
 .card a {
   text-decoration: none;
   color: #000;
-  transition: 150ms opacity ease-in-out;
-}
-.card a:hover {
-  opacity: 0.7;
 }
 .card .card-img {
   position: relative;
@@ -190,6 +199,7 @@ footer img {
   display: flex;
   position: relative;
   align-items: center;
+  flex: 1;
   background-color: #F6F6F6;
   border-radius: 1.25rem;
   padding: 1.75rem 1.75rem 1.75rem 2.125rem;

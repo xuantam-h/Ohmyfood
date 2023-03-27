@@ -35,6 +35,7 @@
             display: flex;
             position:relative;
             align-items: center;
+            flex:1;
             background-color:$lightest-gray-color;
             border-radius: toRem(20);
             padding:toRem(28) toRem(28) toRem(28) toRem(34);
