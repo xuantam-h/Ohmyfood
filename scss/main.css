@@ -12,6 +12,10 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 1.75rem;
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -199,6 +203,14 @@ footer img {
   padding: 2.4375rem 0 3.5625rem 0;
   background-color: #F6F6F6;
 }
+#hero-cta h1 {
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  #hero-cta h1 {
+    font-size: 2.5rem;
+  }
+}
 #hero-cta p {
   font-size: 1.125rem;
   margin-bottom: 1.6875rem;
@@ -214,7 +226,7 @@ footer img {
   flex-direction: column;
   gap: 1.5625rem;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   #how-it-works .steps-container {
     flex-direction: row;
   }
@@ -237,6 +249,12 @@ footer img {
 #how-it-works .steps-container .step:hover i {
   color: #9356DC;
 }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  #how-it-works .steps-container .step {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 #how-it-works .steps-container .step .badge-number {
   background-color: #9356DC;
   color: #FFF;
@@ -251,6 +269,13 @@ footer img {
   position: absolute;
   left: -0.75rem;
 }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  #how-it-works .steps-container .step .badge-number {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.625rem;
+  }
+}
 #how-it-works .steps-container .step p {
   font-weight: 500;
 }
@@ -258,6 +283,12 @@ footer img {
   margin-right: 1.4375rem;
   transition: 150ms color ease-in-out;
   color: #7E7E7E;
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  #how-it-works .steps-container .step i {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 #restaurants-list {
