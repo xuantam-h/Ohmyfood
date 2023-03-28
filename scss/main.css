@@ -53,14 +53,14 @@ p {
 .btn-like i.fa-solid {
   opacity: 0;
 }
-.btn-like:hover i.fa-solid {
+.btn-like:hover i.fa-solid, .btn-like:active i.fa-solid {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
 }
-.btn-like:hover i.fa-regular {
+.btn-like:hover i.fa-regular, .btn-like:active i.fa-regular {
   opacity: 0;
 }
 

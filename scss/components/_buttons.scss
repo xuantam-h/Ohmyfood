@@ -31,7 +31,7 @@
         }
     }
 
-    &:hover{
+    &:hover,&:active{
         i.fa-solid{
             background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
             background-clip: text;
