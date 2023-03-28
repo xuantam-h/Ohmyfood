@@ -4,6 +4,15 @@
     overflow: hidden;
     flex:1;
 
+    @include tablet{
+        flex-basis:48%;
+        flex-grow: 0;
+    }
+
+    @include desktop{
+        flex-grow:1;
+    }
+
     a{
         text-decoration: none;
         color:$black-color;

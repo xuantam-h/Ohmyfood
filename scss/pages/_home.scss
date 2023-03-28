@@ -31,7 +31,7 @@
         flex-direction: column;
         gap: toRem(25);
 
-        @include tablet{
+        @include desktop{
             flex-direction: row;
         }
 
@@ -94,6 +94,11 @@
 
     @include tablet{
         flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include desktop{
+        flex-wrap: nowrap;
     }
 }
 
