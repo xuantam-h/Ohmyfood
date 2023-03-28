@@ -48,13 +48,20 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 250ms background ease-in-out;
+  transition: 250ms all ease-in-out;
+}
+.btn-like i.fa-solid {
+  opacity: 0;
 }
 .btn-like:hover i.fa-solid {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.btn-like:hover i.fa-regular {
+  opacity: 0;
 }
 
 .card {

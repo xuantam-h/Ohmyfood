@@ -24,13 +24,22 @@
         position: absolute;
         left: 0;
         top:0;
-        transition:250ms background ease-in-out;
+        transition: 250ms all ease-in-out;
+
+        &.fa-solid{
+            opacity:0;
+        }
     }
+
     &:hover{
         i.fa-solid{
             background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            opacity:1;
+        }
+        i.fa-regular{
+            opacity:0;
         }
     }
 }
