@@ -5,11 +5,29 @@ footer{
     flex-direction: column;
     gap:toRem(25);
 
+    @include desktop{
+        flex-direction: row-reverse;
+        padding:toRem(52) toRem(80) toRem(43) toRem(80);
+        align-items: center;
+    }
+
     nav{
         ul{
             list-style: none;
+
+            @include desktop{
+                display: flex;
+                gap:toRem(40);
+                margin-right:toRem(70);
+            }
+
             li{
                 margin-bottom:toRem(11);
+
+                @include desktop{
+                    margin-bottom: 0;
+                }
+
                 a{
                     color:$white-color;
                     text-decoration: none;

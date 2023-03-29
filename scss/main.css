@@ -135,10 +135,19 @@ p {
   }
   80% {
     opacity: 1;
-    z-index: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes zindexnone {
+  0% {
+    z-index: 1;
+  }
+  98% {
+    z-index: 1;
+  }
+  100% {
     z-index: -1;
   }
 }
@@ -166,11 +175,30 @@ footer {
   flex-direction: column;
   gap: 1.5625rem;
 }
+@media only screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 3.25rem 5rem 2.6875rem 5rem;
+    align-items: center;
+  }
+}
 footer nav ul {
   list-style: none;
 }
+@media only screen and (min-width: 1024px) {
+  footer nav ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 4.375rem;
+  }
+}
 footer nav ul li {
   margin-bottom: 0.6875rem;
+}
+@media only screen and (min-width: 1024px) {
+  footer nav ul li {
+    margin-bottom: 0;
+  }
 }
 footer nav ul li a {
   color: #FFF;
@@ -231,6 +259,11 @@ footer img {
     flex-direction: row;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #how-it-works .steps-container {
+    margin-top: 3rem;
+  }
+}
 #how-it-works .steps-container .step {
   display: flex;
   position: relative;
@@ -253,6 +286,7 @@ footer img {
   #how-it-works .steps-container .step {
     flex-direction: column;
     text-align: center;
+    margin-left: 0;
   }
 }
 #how-it-works .steps-container .step .badge-number {
@@ -310,6 +344,7 @@ footer img {
 @media only screen and (min-width: 1024px) {
   .card-container {
     flex-wrap: nowrap;
+    gap: 2rem;
   }
 }
 
@@ -326,7 +361,7 @@ footer img {
   z-index: 1;
   background: #FFF;
   opacity: 1;
-  animation: fadeOut 4000ms forwards;
+  animation: fadeOut 4000ms forwards, zindexnone 4100ms forwards;
 }
 .loader-container .loader {
   position: relative;
