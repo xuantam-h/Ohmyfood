@@ -4,8 +4,16 @@ header{
     z-index: 0;
     padding:toRem(16) 0 toRem(8) 0;
     text-align: center;
+
+    @include desktop{
+        padding: toRem(30) 0;
+    }
 }
 
 .site-logo{
     max-width: toRem(162);
+
+    @include desktop{
+        max-width: toRem(200);
+    }
 }
