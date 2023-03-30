@@ -129,7 +129,6 @@
     }
 
     @include desktop{
-        flex-wrap: nowrap;
         gap:toRem(32);
     }
 }
