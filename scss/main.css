@@ -88,6 +88,16 @@ p {
   opacity: 0;
 }
 
+.home-link {
+  color: #353535;
+  text-decoration: none;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.4375rem;
+}
+
 .card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 0.9375rem;
@@ -426,4 +436,18 @@ footer img {
 .loader-container .loader span:nth-child(3) {
   color: #99E2D0;
   animation-delay: 1s;
+}
+
+.restaurant-info {
+  background-color: #F6F6F6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  position: relative;
+  top: -2.8125rem;
+  padding: 2rem 1.0625rem;
+}
+
+.restaurant-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

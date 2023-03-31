@@ -44,3 +44,13 @@
         }
     }
 }
+
+.home-link{
+    color:$gray-color;
+    text-decoration: none;
+    font-size: toRem(20);
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:toRem(23);
+}

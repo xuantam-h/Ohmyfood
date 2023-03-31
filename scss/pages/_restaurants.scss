@@ -1,0 +1,12 @@
+.restaurant-info{
+    background-color: $lightest-gray-color;
+    border-radius:toRem(40) toRem(40) 0 0;
+    position: relative;
+    top:toRem(-45);
+    padding:toRem(32) toRem(17);
+}
+
+.restaurant-title-container{
+    @include flex-center-vert;
+    margin-bottom: toRem(40);
+}
