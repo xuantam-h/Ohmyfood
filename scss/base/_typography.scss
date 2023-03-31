@@ -15,3 +15,18 @@ p{
 .restaurant-title{
     font-family: $headings-font;
 }
+
+.restaurant-subtitle{
+    font-weight: $text-weight;
+    font-size: toRem(16);
+    text-transform: uppercase;
+    &:after{
+        content:'';
+        display: block;
+        width: toRem(40);
+        height: toRem(3);
+        position: relative;
+        top:toRem(6);
+        background-color: $tertiary-color;
+    }
+}
