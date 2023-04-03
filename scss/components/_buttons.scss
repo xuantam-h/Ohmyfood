@@ -4,13 +4,17 @@
     border-radius: $btn-border-radius;
     background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
     text-decoration: none;
-    padding: toRem(13) toRem(18);
+    padding: toRem(13) toRem(20);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     transition: all 150ms ease-in-out;
     &:hover{
         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     }
+}
+
+.btn-lg{
+    padding: toRem(15) toRem(45);
 }
 
 .btn-like{
@@ -20,6 +24,7 @@
     height: toRem(20);
     position: relative;
     cursor: pointer;
+    font-size: toRem(20);
 
     i{
         position: absolute;
@@ -51,6 +56,11 @@
     font-size: toRem(20);
     position: absolute;
     top:50%;
-    transform:translateY(-50%);
+    transform:translate(0,-50%);
     left:toRem(23);
+    transition: transform 150ms ease-in-out;
+
+    &:hover{
+        transform:translate(toRem(-5),-50%)
+    }
 }

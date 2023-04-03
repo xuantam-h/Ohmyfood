@@ -13,7 +13,7 @@
 
 #hero-cta{
     text-align: center;
-    padding:toRem(39) 0 toRem(57) 0;
+    padding:toRem(39) toRem(20) toRem(57) toRem(20);
     background-color: $lightest-gray-color;
 
     h1{
