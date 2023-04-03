@@ -1,3 +1,16 @@
+.restaurant-banner{
+    @include desktop{
+        max-height: toRem(423);
+    }
+    img{
+        @include desktop{
+            max-height: toRem(423);
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 .restaurant-info{
     background-color: $lightest-gray-color;
     border-radius:toRem(40) toRem(40) 0 0;
@@ -9,4 +22,69 @@
 .restaurant-title-container{
     @include flex-center-vert;
     margin-bottom: toRem(40);
+    justify-content: space-between;
+}
+
+.dishes-container{
+    list-style: none;
+    @include flex-column;
+    gap:toRem(12);
+    margin-bottom: toRem(40);
+
+    .dish{
+        display: flex;
+        justify-content: space-between;
+        background-color:$white-color;
+        border-radius: toRem(15);
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        &:hover{
+            cursor: pointer;
+            .dish-check{
+                width:toRem(59);
+                i{
+                    opacity: 1;
+                }
+            }
+        }
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .dish-price-check{
+            display: flex;
+
+            .dish-price{
+                font-weight: $title-weight;
+                color:$gray-color;
+            }
+        }
+
+        .dish-info{
+            padding:toRem(15);
+
+            .dishes-title{
+                margin-bottom: toRem(5);
+            }
+        }
+    }
+}
+
+.dish-check{
+    background-color: $tertiary-color;
+    width:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms width;
+
+    i{
+        font-size:toRem(21);
+        color:$white-color;
+        opacity: 0;
+        transition: 500ms opacity;
+    }
 }

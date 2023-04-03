@@ -438,6 +438,20 @@ footer img {
   animation-delay: 1s;
 }
 
+@media only screen and (min-width: 1024px) {
+  .restaurant-banner {
+    max-height: 26.4375rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-banner img {
+    max-height: 26.4375rem;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .restaurant-info {
   background-color: #F6F6F6;
   border-radius: 2.5rem 2.5rem 0 0;
@@ -450,4 +464,63 @@ footer img {
   display: flex;
   align-items: center;
   margin-bottom: 2.5rem;
+  justify-content: space-between;
+}
+
+.dishes-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+.dishes-container .dish {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-radius: 0.9375rem;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.dishes-container .dish:hover {
+  cursor: pointer;
+}
+.dishes-container .dish:hover .dish-check {
+  width: 3.6875rem;
+}
+.dishes-container .dish:hover .dish-check i {
+  opacity: 1;
+}
+.dishes-container .dish p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dishes-container .dish .dish-price-check {
+  display: flex;
+}
+.dishes-container .dish .dish-price-check .dish-price {
+  font-weight: 700;
+  color: #353535;
+}
+.dishes-container .dish .dish-info {
+  padding: 0.9375rem;
+}
+.dishes-container .dish .dish-info .dishes-title {
+  margin-bottom: 0.3125rem;
+}
+
+.dish-check {
+  background-color: #99E2D0;
+  width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms width;
+}
+.dish-check i {
+  font-size: 1.3125rem;
+  color: #FFF;
+  opacity: 0;
+  transition: 500ms opacity;
 }/*# sourceMappingURL=main.css.map */
