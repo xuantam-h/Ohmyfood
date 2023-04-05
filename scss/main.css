@@ -122,6 +122,7 @@ p {
 @media only screen and (min-width: 1024px) {
   .card {
     flex-grow: 1;
+    flex-basis: 44%;
   }
 }
 .card a {
@@ -176,6 +177,16 @@ p {
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+@keyframes fadeIn-RtL {
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes fadeOut {
@@ -403,11 +414,12 @@ footer img {
   .card-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 1024px) {
   .card-container {
-    gap: 2rem;
+    gap: 3.125rem 6.25rem;
   }
 }
 
@@ -508,20 +520,29 @@ footer img {
   border-radius: 0.9375rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  opacity: 0;
+  transform: translateX(0);
+  animation: fadeIn-RtL 500ms forwards;
 }
-.dishes-container .dish:hover {
+.dishes-container .dish:hover, .dishes-container .dish:active {
   cursor: pointer;
 }
-.dishes-container .dish:hover .dish-check {
+.dishes-container .dish:hover .dish-check, .dishes-container .dish:active .dish-check {
   width: 3.6875rem;
 }
-.dishes-container .dish:hover .dish-check i {
+.dishes-container .dish:hover .dish-check i, .dishes-container .dish:active .dish-check i {
   opacity: 1;
 }
 .dishes-container .dish p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.dishes-container .dish:nth-child(2) {
+  animation-delay: 300ms;
+}
+.dishes-container .dish:nth-child(3) {
+  animation-delay: 600ms;
 }
 .dishes-container .dish .dish-price-check {
   display: flex;

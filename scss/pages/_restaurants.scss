@@ -49,8 +49,11 @@
         border-radius: toRem(15);
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         overflow: hidden;
+        opacity:0;
+        transform: translateX(0);
+        animation: fadeIn-RtL 500ms forwards;
 
-        &:hover{
+        &:hover, &:active{
             cursor: pointer;
             .dish-check{
                 width:toRem(59);
@@ -59,10 +62,19 @@
                 }
             }
         }
+
         p{
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        &:nth-child(2){
+            animation-delay: 300ms;
+        }
+
+        &:nth-child(3){
+            animation-delay: 600ms;
         }
 
         .dish-price-check{
