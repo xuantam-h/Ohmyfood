@@ -67,11 +67,11 @@ p {
 .btn-like {
   background: none;
   border: none;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   position: relative;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.5625rem;
 }
 .btn-like i {
   position: absolute;
@@ -225,6 +225,10 @@ header {
 .container {
   max-width: 65.625rem;
   margin: 0 auto;
+}
+
+.container-center {
+  text-align: center;
 }
 
 footer {
