@@ -1,9 +1,9 @@
 .restaurant-banner{
-    @include desktop{
+    @include tablet{
         max-height: toRem(423);
     }
     img{
-        @include desktop{
+        @include tablet{
             max-height: toRem(423);
             width: 100%;
             object-fit: cover;
@@ -17,12 +17,23 @@
     position: relative;
     top:toRem(-45);
     padding:toRem(32) toRem(17);
+    @include desktop{
+        max-width: toRem(1055);
+        width:75%;
+        margin:0 auto;
+        padding:toRem(51) 10%;
+    }
 }
 
 .restaurant-title-container{
     @include flex-center-vert;
     margin-bottom: toRem(40);
     justify-content: space-between;
+    
+    @include tablet{
+        justify-content: center;
+        gap:toRem(24);
+    }
 }
 
 .dishes-container{
@@ -56,19 +67,23 @@
 
         .dish-price-check{
             display: flex;
-
-            .dish-price{
-                font-weight: $title-weight;
-                color:$gray-color;
-            }
         }
 
         .dish-info{
             padding:toRem(15);
             white-space: nowrap;
+            flex:1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
 
             .dishes-title{
                 margin-bottom: toRem(5);
+            }
+
+            .dish-price{
+                font-weight: $title-weight;
+                color:$gray-color;
             }
         }
     }

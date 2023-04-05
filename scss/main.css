@@ -447,12 +447,12 @@ footer img {
   animation-delay: 1s;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurant-banner {
     max-height: 26.4375rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .restaurant-banner img {
     max-height: 26.4375rem;
     width: 100%;
@@ -468,12 +468,26 @@ footer img {
   top: -2.8125rem;
   padding: 2rem 1.0625rem;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-info {
+    max-width: 65.9375rem;
+    width: 75%;
+    margin: 0 auto;
+    padding: 3.1875rem 10%;
+  }
+}
 
 .restaurant-title-container {
   display: flex;
   align-items: center;
   margin-bottom: 2.5rem;
   justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .restaurant-title-container {
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 
 .dishes-container {
@@ -508,16 +522,20 @@ footer img {
 .dishes-container .dish .dish-price-check {
   display: flex;
 }
-.dishes-container .dish .dish-price-check .dish-price {
-  font-weight: 700;
-  color: #353535;
-}
 .dishes-container .dish .dish-info {
   padding: 0.9375rem;
   white-space: nowrap;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .dishes-container .dish .dish-info .dishes-title {
   margin-bottom: 0.3125rem;
+}
+.dishes-container .dish .dish-info .dish-price {
+  font-weight: 700;
+  color: #353535;
 }
 
 .dish-check {
