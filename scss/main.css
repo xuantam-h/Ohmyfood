@@ -550,6 +550,9 @@ footer img {
 .dishes-container .dish:nth-child(3) {
   animation-delay: 700ms;
 }
+.dishes-container .dish:nth-child(4) {
+  animation-delay: 1050ms;
+}
 .dishes-container .dish .dish-price {
   font-weight: 700;
   color: #353535;
