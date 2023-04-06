@@ -524,56 +524,53 @@ footer img {
   transform: translateX(0);
   animation: fadeIn-RtL 500ms forwards;
 }
-.dishes-container .dish:hover, .dishes-container .dish:active {
-  cursor: pointer;
-}
-.dishes-container .dish:hover .dish-check, .dishes-container .dish:active .dish-check {
-  width: 3.6875rem;
-}
-.dishes-container .dish:hover .dish-check i, .dishes-container .dish:active .dish-check i {
-  opacity: 1;
-}
-.dishes-container .dish p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.dishes-container .dish:nth-child(2) {
-  animation-delay: 300ms;
-}
-.dishes-container .dish:nth-child(3) {
-  animation-delay: 600ms;
-}
-.dishes-container .dish .dish-price-check {
-  display: flex;
-}
-.dishes-container .dish .dish-info {
-  padding: 0.9375rem;
-  white-space: nowrap;
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.dishes-container .dish .dish-info .dishes-title {
-  margin-bottom: 0.3125rem;
-}
-.dishes-container .dish .dish-info .dish-price {
-  font-weight: 700;
-  color: #353535;
-}
-
-.dish-check {
+.dishes-container .dish:after {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
   background-color: #99E2D0;
   width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 500ms width;
+  font-size: 0;
+  margin-left: 0.9375rem;
 }
-.dish-check i {
+.dishes-container .dish:hover, .dishes-container .dish:active {
+  cursor: pointer;
+}
+.dishes-container .dish:hover:after, .dishes-container .dish:active:after {
+  width: 3.6875rem;
   font-size: 1.3125rem;
   color: #FFF;
-  opacity: 0;
-  transition: 500ms opacity;
+}
+.dishes-container .dish:nth-child(2) {
+  animation-delay: 350ms;
+}
+.dishes-container .dish:nth-child(3) {
+  animation-delay: 700ms;
+}
+.dishes-container .dish .dish-price {
+  font-weight: 700;
+  color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 0.9375rem;
+}
+.dishes-container .dish .dish-info {
+  padding: 0.9375rem;
+  white-space: nowrap;
+  flex: 1;
+  overflow: hidden;
+}
+.dishes-container .dish .dish-info .dishes-title {
+  margin-bottom: 0.3125rem;
+}
+.dishes-container .dish .dish-info .dishes-title, .dishes-container .dish .dish-info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */
