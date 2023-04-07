@@ -1,12 +1,14 @@
 .restaurant-banner{
+    max-height: toRem(275);
     @include tablet{
         max-height: toRem(423);
     }
     img{
+        max-height: toRem(275);
+        width: 100%;
+        object-fit: cover;
         @include tablet{
             max-height: toRem(423);
-            width: 100%;
-            object-fit: cover;
         }
     }
 }
@@ -14,13 +16,16 @@
 .restaurant-info{
     background-color: $lightest-gray-color;
     border-radius:toRem(40) toRem(40) 0 0;
-    position: relative;
-    top:toRem(-45);
     padding:toRem(32) toRem(17);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top:toRem(-45);
     @include desktop{
         max-width: toRem(1055);
         width:75%;
-        margin:0 auto;
+        margin-left: auto;
+        margin-right: auto;
         padding:toRem(51) 10%;
     }
 }

@@ -463,32 +463,41 @@ footer img {
   animation-delay: 1s;
 }
 
+.restaurant-banner {
+  max-height: 17.1875rem;
+}
 @media only screen and (min-width: 768px) {
   .restaurant-banner {
     max-height: 26.4375rem;
   }
 }
+.restaurant-banner img {
+  max-height: 17.1875rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media only screen and (min-width: 768px) {
   .restaurant-banner img {
     max-height: 26.4375rem;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
 .restaurant-info {
   background-color: #F6F6F6;
   border-radius: 2.5rem 2.5rem 0 0;
-  position: relative;
-  top: -2.8125rem;
   padding: 2rem 1.0625rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2.8125rem;
 }
 @media only screen and (min-width: 1024px) {
   .restaurant-info {
     max-width: 65.9375rem;
     width: 75%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 3.1875rem 10%;
   }
 }
