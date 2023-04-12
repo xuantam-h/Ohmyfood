@@ -574,7 +574,6 @@ footer img {
 }
 .dishes-container .dish .dish-info {
   padding: 0.9375rem;
-  white-space: nowrap;
   flex: 1;
   overflow: hidden;
 }
