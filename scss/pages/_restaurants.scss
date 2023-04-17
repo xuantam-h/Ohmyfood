@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     margin-top:toRem(-45);
+
     @include desktop{
         max-width: toRem(1055);
         width:75%;
@@ -28,7 +29,24 @@
         margin-right: auto;
         padding:toRem(51) 10%;
     }
+
+    .restaurant-dishes{
+        opacity:0;
+        transform: translateX(0);
+        animation: fadeIn-RtL 500ms forwards;
+        &:nth-of-type(2){
+            animation-delay: .5s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 1s;
+        }
+        &:nth-of-type(4){
+            animation-delay: 1.5s;
+        }
+    }
 }
+
+
 
 .restaurant-title-container{
     @include flex-center-vert;
@@ -54,9 +72,6 @@
         border-radius: toRem(15);
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         overflow: hidden;
-        opacity:0;
-        transform: translateX(0);
-        animation: fadeIn-RtL 500ms forwards;
 
         &:after{
             content:"\f058";
@@ -78,18 +93,6 @@
                 font-size:toRem(21);
                 color:$white-color;
             }
-        }
-
-        &:nth-child(2){
-            animation-delay: 350ms;
-        }
-
-        &:nth-child(3){
-            animation-delay: 700ms;
-        }
-
-        &:nth-child(4){
-            animation-delay: 1050ms;
         }
 
         .dish-price{
