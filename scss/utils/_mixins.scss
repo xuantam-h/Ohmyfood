@@ -24,6 +24,11 @@
     justify-content: center;
 }
 
+@mixin text-clip {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 $tablet: 768;
 $desktop: 1024;
 

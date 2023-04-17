@@ -151,30 +151,59 @@
     animation:fadeOut 4000ms forwards, zindexnone 4100ms forwards;
 
     .loader{
-        span{
+        position: relative;
+
+        &>span{
             display: inline-block;
             font-size: toRem(40);
             font-family: $headings-font;
-            transition: 2.5s all ease-in-out;
-            transform:scale(0);
-            animation: letter-fade 1s linear forwards;
 
             @include tablet{
                 font-size: toRem(70);
             }
 
-            &:nth-child(1){
+            &:nth-child(2){
                 color:$primary-color;
             }
 
-            &:nth-child(2){
+            &:nth-child(3){
                 color:$secondary-color;
-                animation-delay: .5s;
             }
 
-            &:nth-child(3){
+            &:nth-child(4){
                 color:$tertiary-color;
-                animation-delay: 1s;
+            }
+        }
+
+        .loader-icons{
+            @include flex-center;
+            gap:toRem(30);
+
+            i{
+                font-size:toRem(30);
+                animation:fadeInUp 1s ease-in-out forwards;
+                opacity: 0;
+
+                @include tablet{
+                    font-size:toRem(50);
+                }
+
+                &:nth-child(1){
+                    background:linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
+                    @include text-clip;
+                }
+    
+                &:nth-child(2){
+                    background:linear-gradient(200.64deg, $secondary-color -5.2%, $secondary-color 110.74%);
+                    @include text-clip;
+                    animation-delay:.5s;
+                }
+    
+                &:nth-child(3){
+                    background:linear-gradient(200.64deg, $tertiary-color -5.2%, $tertiary-color 110.74%);
+                    @include text-clip;
+                    animation-delay:1s;
+                }
             }
         }
     }
