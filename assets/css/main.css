@@ -591,6 +591,7 @@ footer img {
   transition: 500ms width;
   font-size: 0;
   margin-left: 0.9375rem;
+  font-weight: 900;
 }
 .dishes-container .dish:hover, .dishes-container .dish:active {
   cursor: pointer;
